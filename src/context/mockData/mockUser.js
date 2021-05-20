@@ -1,0 +1,38 @@
+const mockUser = {
+  login: "iamshaunjp",
+  id: 9838872,
+  node_id: "MDQ6VXNlcjk4Mzg4NzI=",
+  avatar_url: "https://avatars.githubusercontent.com/u/9838872?v=4",
+  gravatar_id: "",
+  url: "https://api.github.com/users/iamshaunjp",
+  html_url: "https://github.com/iamshaunjp",
+  followers_url: "https://api.github.com/users/iamshaunjp/followers",
+  following_url:
+    "https://api.github.com/users/iamshaunjp/following{/other_user}",
+  gists_url: "https://api.github.com/users/iamshaunjp/gists{/gist_id}",
+  starred_url: "https://api.github.com/users/iamshaunjp/starred{/owner}{/repo}",
+  subscriptions_url: "https://api.github.com/users/iamshaunjp/subscriptions",
+  organizations_url: "https://api.github.com/users/iamshaunjp/orgs",
+  repos_url: "https://api.github.com/users/iamshaunjp/repos",
+  events_url: "https://api.github.com/users/iamshaunjp/events{/privacy}",
+  received_events_url:
+    "https://api.github.com/users/iamshaunjp/received_events",
+  type: "User",
+  site_admin: false,
+  name: "Shaun",
+  company: "The Net Ninja",
+  blog: "https://www.youtube.com/TheNetNinja",
+  location: "United Kingdom",
+  email: null,
+  hireable: true,
+  bio: "Coding Ninja | Traveller | Musician | Coffee Enthusiast | Gamer :violin:",
+  twitter_username: null,
+  public_repos: 83,
+  public_gists: 2,
+  followers: 15894,
+  following: 0,
+  created_at: "2014-11-19T06:40:23Z",
+  updated_at: "2021-05-19T06:03:27Z",
+};
+
+export default mockUser;
