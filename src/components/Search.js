@@ -48,12 +48,12 @@ const Wrapper = styled.div`
     column-gap: 0.5rem;
     border-radius: 5px;
     padding: 0.5rem;
-    background: whitesmoke;
+    background: white;
 
     input {
       border: transparent;
       outline: transparent;
-      background: whitesmoke;
+      background: white;
       padding: 3px;
       font-size: 1.3rem;
       color: rgba(0, 0, 0, 0.7);
