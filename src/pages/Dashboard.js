@@ -1,10 +1,15 @@
 import React from "react";
+import { Navbar, Search, Repos, User, Info } from "../components";
 
 function Dashboard() {
   return (
-    <div>
-      <h1>DashBoard</h1>
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <Search />
+      <Info />
+      <User />
+      <Repos />
+    </React.Fragment>
   );
 }
 
