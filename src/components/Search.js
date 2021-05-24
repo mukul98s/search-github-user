@@ -36,6 +36,10 @@ const Wrapper = styled.div`
   grid-gap: 1rem;
   align-items: center;
 
+  @media screen and (max-width: 840px) {
+    grid-template-columns: 1fr;
+  }
+
   svg {
     font-size: 1.2rem;
     margin: auto 10px;

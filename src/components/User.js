@@ -19,6 +19,10 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 1rem 2rem;
   margin-top: 3rem;
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 `;
 
 export default User;
