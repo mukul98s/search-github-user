@@ -24,6 +24,9 @@ const Pie3D = ({ data }) => {
         //Set the chart caption
         caption: "Language",
         theme: "candy",
+        decimals: 0,
+        pieRadius: "60%",
+        doughnutRadius: "60%",
       },
       // Chart Data
       data: data,

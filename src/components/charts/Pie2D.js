@@ -17,7 +17,7 @@ const Pie2D = ({ data }) => {
       chart: {
         caption: "Stars Per Language",
         decimals: 0,
-        pieRadius: "45%",
+        pieRadius: "60%",
         doughnutRadius: "60%",
         showPercentValues: 0,
         theme: "candy",
