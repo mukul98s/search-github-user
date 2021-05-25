@@ -12,7 +12,7 @@ function Repos() {
       return { label: name, value: forks_count };
     })
     .sort((a, b) => b.value - a.value)
-    .slice(0, 8);
+    .slice(0, 5);
 
   const languages = repos.reduce((total, item) => {
     const { language, stargazers_count } = item;
@@ -32,14 +32,14 @@ function Repos() {
 
   const mostUsed = Object.values(languages)
     .sort((a, b) => b.stars - a.stars)
-    .slice(0, 6);
+    .slice(0, 5);
 
   const mostPopular = Object.values(languages)
     .sort((a, b) => b.value - a.value)
     .map((item) => {
       return { ...item, value: item.stars };
     })
-    .slice(0, 6);
+    .slice(0, 5);
 
   const mostStared = repos
     .map((repo) => {
@@ -47,7 +47,7 @@ function Repos() {
       return { label: name, value: stargazers_count };
     })
     .sort((a, b) => b.value - a.value)
-    .slice(0, 6);
+    .slice(0, 5);
 
   return (
     <div className="container">
