@@ -1,18 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import login from "../images/login.svg";
 import styled from "styled-components";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Login() {
+  const { loginWithRedirect } = useAuth0();
   return (
     <div className="container">
       <Wrapper>
         <div>
-          <img src={login} alt="Error 404" />
+          <img src={login} alt="Login" />
         </div>
-        <Link to="" className="button">
+        <button className="button" onClick={loginWithRedirect}>
           Login
-        </Link>
+        </button>
       </Wrapper>
     </div>
   );
