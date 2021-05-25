@@ -64,6 +64,9 @@ const Wrapper = styled.div`
     height: 300px;
     background: white;
     padding: 1rem 2rem;
+    @media screen and (max-width: 600px) {
+      height: 330px;
+    }
 
     ::before {
       content: " User";
