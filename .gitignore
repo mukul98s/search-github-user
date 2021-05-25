@@ -18,7 +18,11 @@
 .env.test.local
 .env.production.local
 .env
+netlify.toml
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local Netlify folder
+.netlify
