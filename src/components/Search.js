@@ -1,15 +1,28 @@
 import React, { useState } from "react";
 import { MdSearch } from "react-icons/md";
 import styled from "styled-components";
+import { GlobalContext } from "../context/context";
 function Search() {
   const [user, setUser] = useState("");
+  const { requests, error, searchGithubUser, isLoading } =
+    React.useContext(GlobalContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (user) {
+      searchGithubUser(user);
+      setUser("");
+    }
   };
   return (
     <section className="container">
       <Wrapper>
+        {error.show && (
+          <Error>
+            <p>{error.message}</p>
+          </Error>
+        )}
         <form onSubmit={handleSubmit}>
           <div className="search">
             <MdSearch />
@@ -19,11 +32,13 @@ function Search() {
               onChange={(e) => setUser(e.target.value)}
               placeholder="Search Github User"
             />
-            <button className="button">Search</button>
+            {requests > 0 && !isLoading && (
+              <button className="button">Search</button>
+            )}
           </div>
         </form>
         <div className="requests">
-          <h3>Requests : 60/60</h3>
+          <h3>Requests : {requests}/60</h3>
         </div>
       </Wrapper>
     </section>
@@ -86,6 +101,16 @@ const Wrapper = styled.div`
       color: rgba(0, 0, 0, 0.5);
       font-size: 1.5rem;
     }
+  }
+`;
+
+const Error = styled.div`
+  color: crimson;
+  p {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 10px auto;
   }
 `;
 
