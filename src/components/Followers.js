@@ -35,6 +35,9 @@ const Wrapper = styled.div`
     overflow-y: scroll;
     background: white;
     padding: 1rem;
+    @media screen and (max-width: 600px) {
+      height: 330px;
+    }
 
     ::before {
       content: " followers";
