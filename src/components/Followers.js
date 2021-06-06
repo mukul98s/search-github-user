@@ -29,6 +29,9 @@ const Wrapper = styled.div`
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   position: relative;
+  @media screen and (max-width: 960px) {
+    margin-top: 3rem;
+  }
 
   .followers {
     height: 300px;

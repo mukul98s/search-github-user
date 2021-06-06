@@ -51,5 +51,12 @@ code {
 
 .container {
   width: 80vw;
-  margin: 0 auto;
+  margin: auto 10vw;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 90vw;
+    margin: auto 5vw;
+  }
 }

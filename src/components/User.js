@@ -20,8 +20,13 @@ const Wrapper = styled.div`
   gap: 1rem 2rem;
   margin-top: 3rem;
   @media screen and (max-width: 960px) {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: stretch;
   }
 `;
 

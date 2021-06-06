@@ -30,6 +30,12 @@ const Wrapper = styled.div`
     width: 40vw;
     text-align: center;
   }
+  @media screen and (max-width: 720px) {
+    div {
+      width: 80vw;
+    }
+  }
+
   img {
     width: 100%;
     height: 100%;

@@ -30,7 +30,7 @@ function Search() {
               type="text"
               value={user}
               onChange={(e) => setUser(e.target.value)}
-              placeholder="Search Github User"
+              placeholder="Search User"
             />
             {requests > 0 && !isLoading && (
               <button className="button">Search</button>
@@ -46,18 +46,29 @@ function Search() {
 }
 
 const Wrapper = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: 4fr 1fr;
   grid-gap: 1rem;
   align-items: center;
+  margin-bottom: 5rem;
 
-  @media screen and (max-width: 840px) {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
 
   svg {
     font-size: 1.2rem;
     margin: auto 10px;
+  }
+  @media screen and (max-width: 480px) {
+    form {
+      width: 90vw;
+      margin: auto 5vw;
+    }
+  }
+
+  form {
+    flex: 1;
   }
 
   .search {
@@ -80,6 +91,11 @@ const Wrapper = styled.div`
       input::placeholder {
         font-size: 1.3rem;
         color: rgba(0, 0, 0, 0.3);
+      }
+    }
+    @media screen and (max-width: 480px) {
+      input {
+        width: 10rem;
       }
     }
 
