@@ -1,3 +1,8 @@
 # Search Github User
 
-This app will let you to search a GitHub user and show you different statistics along with interactive graphs.
+### Features
+* Search Github User's Profile.
+* Detailed Stats about user's Profile.
+* Interactive Graphs of user Stats.
+
+[Link to Live Project](https://github-search-user-mukul.netlify.app/)
